@@ -109,7 +109,7 @@ function Body() {
       </div> */}
 
       {/* MORE INFO */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-10 bg-gray-100 text-gray-700">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-10 bg-gray-200 text-gray-700">
         <div className="border-2 border-gray-300 p-4 rounded-lg shadow-md">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo ex iusto
           eveniet velit sequi sunt.
