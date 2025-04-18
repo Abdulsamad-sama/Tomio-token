@@ -1,27 +1,25 @@
-import React from "react";
 import { FaHamburger } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import { useState } from "react";
-type Props = {};
 
-const Header = (props: Props) => {
+function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
-    <header className="flex justify-around sticky p-4 shadow-md place-items-center">
+    <header className="flex justify-around fixed w-full p-4 shadow-md items-center bg-gray-200 text-gray-700">
       {/* LOGO */}
       <h1 className="text-3xl font-medium">Tomio</h1>
       {/* DESKTOPNAV */}
       <nav className="hidden md:flex ">
         <ul className="flex place-items-center gap-8">
           <li>
-            <a href="">Twitter</a>
+            <a href="#">Twitter</a>
           </li>
           <li>
-            <a href="">Telegram</a>
+            <a href="#">Telegram</a>
           </li>
         </ul>
       </nav>
@@ -54,6 +52,6 @@ const Header = (props: Props) => {
       </nav>
     </header>
   );
-};
+}
 
 export default Header;
